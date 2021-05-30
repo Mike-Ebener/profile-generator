@@ -4,8 +4,6 @@ const Employee = require('../lib/Employee');
 
 
 
-
-
 test('creates a new employee profile', () => {
     const employee = new Employee('Kamala');
     
