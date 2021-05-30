@@ -48,7 +48,7 @@ return inquirer.prompt([
       }
     ])
     .then(portfolioData => {
-        console.log(portfolioData);
+        // console.log(portfolioData);
         return portfolioData;
         //projectData.push(portfolioData);
         // const employeeOne = new Employee(portfolioData.name, portfolioData.id,portfolioData.email);
@@ -59,13 +59,13 @@ return inquirer.prompt([
     promptUser()
       .then(portfolioData => {
        console.log(portfolioData);
-       
-        // const pageMD = generateMarkdown(profileData);
-        // fs.writeFile('./dist/README.md', pageMD, err => {
-        //   if (err) throw new Error(err);
-        //  console.log('Page created! Check out README.md in the dist directory to see it!');
-        // });
 
+       
+        // const pageHTML = generateHTML(portfolioData);
+        // fs.writeFile('./dist/index.html', pageHTML, err => {
+        //   if (err) throw new Error(err);
+        //  console.log('Page created! Check out HTML in the dist directory to see it!');
+        // });
         
     });
     
