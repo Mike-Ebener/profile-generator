@@ -1,7 +1,7 @@
 const { expect, test } = require('@jest/globals');
 const { string } = require('yargs');
 const Manager = require('../lib/Manager');
-// const Employee = require('../lib/Employee');
+
 
 
 test('creates a new Manager profile', () => {
@@ -13,4 +13,13 @@ test('creates a new Manager profile', () => {
     expect(manager.email).toEqual(expect.any(String));
     expect(manager.office).toEqual(expect.any(String));
    
+  });
+
+  test('gets managers data as an object', () => {
+    const manager = new Manager('Kamala');
+    expect(manager.getStats()).toHaveProperty('name');
+    expect(manager.getStats()).toHaveProperty('id');
+    expect(manager.getStats()).toHaveProperty('email');
+    expect(manager.getStats()).toHaveProperty('role');
+    expect(manager.getStats()).toHaveProperty('office');
   });
